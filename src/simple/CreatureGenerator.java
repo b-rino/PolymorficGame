@@ -8,8 +8,10 @@ public class CreatureGenerator {
 
     private ArrayList<Creature> creatures = new ArrayList<>();
 
-    public CreatureGenerator(){
+    public CreatureGenerator()
+    {
         generateCreatures();
+
     }
 
     public void generateCreatures() {
@@ -17,6 +19,7 @@ public class CreatureGenerator {
         creatures.add(new Dragon("Puff"));
         creatures.add(new Spider("Peter"));
         creatures.add(new Dragon("Smaug"));
+        creatures.add(new Bear("Bear"));
     }
 
     public Creature getRandomCreature() {
